@@ -1,0 +1,3 @@
+			<!-- HTTP_FORM_START -->
+			<form method='get' action='wifisave'><input id='s' name='s' length=32 placeholder='SSID'><br/><input id='p' name='p' length=64 type='password' placeholder='password'><br/>
+			<!-- /HTTP_FORM_START -->

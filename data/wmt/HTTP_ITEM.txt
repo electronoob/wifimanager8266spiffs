@@ -1,0 +1,3 @@
+			<!-- HTTP_ITEM -->
+			<div><a href='#p' onclick='c(this)'>{v}</a>&nbsp;<span class='q {i}'>{r}%</span></div>
+			<!-- /HTTP_ITEM -->

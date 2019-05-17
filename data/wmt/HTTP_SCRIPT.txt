@@ -1,0 +1,5 @@
+<!-- HTTP_SCRIPT -->
+		<script>
+			function c(l){document.getElementById('s').value=l.innerText||l.textContent;document.getElementById('p').focus();}
+		</script>
+<!-- /HTTP_SCRIPT -->
