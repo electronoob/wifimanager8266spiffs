@@ -427,33 +427,7 @@ void WiFiManager::handleRoot() {
   page += _customHeadElement;
   page += WiFiManager::getSpiffsTPL("HTTP_HEAD_END");
   page += String(F("<h1>"));
-
-
-      //Read File data
-  File f = SPIFFS.open("/cocks1.txt", "r");
-  String buf = "";
-
-  if (!f) {
-    Serial.println("file open failed");
-  }
-  else
-  {
-      Serial.println("Reading Data from File:");
-      //Data from file
-      int i;
-      for(i=0;i<f.size();i++) //Read upto complete file size
-      {
-        char ch = (char)f.read();
-        Serial.print(ch);
-        buf += ch;
-      }
-      f.close();  //Close file
-      Serial.println("File Closed");
-      Serial.println(buf);
-  }
-
-
-  page += buf;//_apName;
+  page += _apName;
   page += String(F("</h1>"));
   page += String(F("<h3>WiFiManager</h3>"));
   page += getSpiffsTPL("HTTP_PORTAL_OPTIONS");
